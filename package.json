@@ -1,19 +1,37 @@
 {
-  "name": "web-storage-ts",
+  "name": "ts-web-storage",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.1.0",
+  "license": "MIT",
   "type": "module",
+  "bugs": {
+    "url": "https://github.com/yeori/ts-web-storage/issues",
+    "email": "yeori.seo@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeori/ts-web-storage.git"
+  },
+  "keywords": [
+    "localstorage",
+    "sessionstorage"
+  ],
+  "author": {
+    "name": "yeori",
+    "email": "yeori.seo@gmail.com"
+  },
   "files": [
     "dist"
   ],
-  "main": "./dist/web-storage-ts.umd.cjs",
-  "module": "./dist/web-storage-ts.js",
+  "main": "./dist/ts-web-storage.umd.cjs",
+  "module": "./dist/ts-web-storage.js",
   "exports": {
     ".": {
-      "import": "./dist/web-storage-ts.js",
-      "require": "./dist/web-storage-ts.umd.cjs"
+      "import": "./dist/ts-web-storage.js",
+      "require": "./dist/ts-web-storage.umd.cjs"
     }
   },
+  "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -22,6 +40,7 @@
   "devDependencies": {
     "@types/node": "^22.10.1",
     "typescript": "~5.6.2",
-    "vite": "^6.0.1"
+    "vite": "^6.0.1",
+    "vite-plugin-dts": "^4.3.0"
   }
 }
